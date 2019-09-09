@@ -1,15 +1,99 @@
-.logo{
-  text-align: center;
-  padding: 10px;
+.header{
+  display: flex;
+  margin: 10px;
+  justify-content: center;
 
-  & img{
-    max-width: 35%;
+  &__logo{
+    display: flex;
+    justify-content: center;
+
+    & img{
+      max-width: 30%;
+    }
   }
 
+  &__hamburger{
+    align-self: center;
+    width: 30px;
+    position:relative;
+
+
+    & span{
+      display: block;
+      @include size-color;
+
+      &::before{
+        @include absolute(9px);
+        @include size-color;
+      }
+      &::after{
+        @include absolute(-9px);
+        @include size-color;
+      }
+    }
+  }
+  &__nav{
+    display: none;
+  }
 }
-@media only screen and (min-width: $break-point-md) {
-  .logo{
-  text-align: center;
-  padding: 30px;
+
+/* ------------------------------------
+  タブレット（768px以上）ブレークポイント　
+// ------------------------------------ */
+// @media only screen and (min-width: $break-point-sm) {
+//   .header{
+//     margin:15px;
+
+//     &__logo{
+//       text-align: center;
+
+//       & img{
+//         max-width: 60%;
+//       }
+//     }
+//   }
+// }
+/* ------------------------------------
+  /タブレット（768px以上）ブレークポイント　
+------------------------------------ */
+
+/* ------------------------------------
+  PC（990px以上）ブレークポイント　
+------------------------------------ */
+/* MediaQuery */
+@media only screen and (min-width: $break-point-pc) {
+  .header{
+      margin: 15px;
+      justify-content: space-between;
+
+      &__logo{
+        visibility:hidden;
+      }
+      &__nav{
+        display: block;
+        align-self: center;
+        justify-content: right;
+
+
+        & ul{
+          display: flex;
+          padding:50px;
+
+          & li{
+            padding: 0 15px;
+          }
+
+
+        }
+
+    }
+      &__hamburger{
+      display: none;
+    }
+  }
+
+
+
+
 }
-}
+/* MediaQuery end */
