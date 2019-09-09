@@ -1,0 +1,62 @@
+
+$main-position: center;
+
+// カラー
+$footer-bgc:#000000;
+$footer-fontc: #ffffff;
+
+// サイズ
+$margin: 30px;
+$break-point-pc: 768px;
+$break-point-sm: 375px;
+
+
+// ハンバーガーメニュー
+
+@mixin absolute($i){
+  content: "";
+  position: absolute;
+  left: 0;
+  top: $i;
+}
+
+@mixin size-color(){
+  background-color:#ccc;
+  width: 100%;
+  height: 5px;
+  border-radius: 1px;
+  transition: all 0.5s ease;
+}
+
+// .menu-container span,
+// .menu-container span::before,
+// .menu-container span::after{
+//   background-color:aliceblue;
+//   width: 100%;
+//   height: 5px;
+//   border-radius: 1px;
+//   transition: all 0.5s ease;
+// }
+
+// .menu-container:hover{
+//   cursor: pointer;
+//   border-radius: 20%;
+//   /* border-color:rgb(255, 241, 51); */
+// }
+
+// .menu-container:hover span{
+//   background-color: transparent;
+// }
+// .menu-container:hover span::before{
+//   transform: rotate(45deg) translate(6.5px,6px);
+//   /* background-color: rgb(255, 241, 51); */
+
+// }
+// .menu-container:hover span::after{
+//   transform: rotate(-45deg)translate(6px,-9px);
+//   /* background-color: rgb(255, 241, 51); */
+
+// }
+// .menu-container:hover p{
+//   color: rgb(255, 241, 51);
+// }
