@@ -1,0 +1,15 @@
+.logo{
+  text-align: center;
+  padding: 10px;
+
+  & img{
+    max-width: 35%;
+  }
+
+}
+@media only screen and (min-width: $break-point-md) {
+  .logo{
+  text-align: center;
+  padding: 30px;
+}
+}
