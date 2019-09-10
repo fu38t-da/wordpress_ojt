@@ -1,4 +1,6 @@
 node_modules
+html/css/style.css
+html/maps/style.css.map
 # こうするとsorcetreeで無視される
 wp-includes/
 wp-admin/
@@ -9,3 +11,4 @@ wp-content/themes/twentynineteen
 wp-content/themes/twentyseventeen
 wp-content/themes/twentysixteen
 package-lock.json
+gulpfile.js
