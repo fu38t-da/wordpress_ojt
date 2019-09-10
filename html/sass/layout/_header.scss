@@ -1,3 +1,6 @@
+.width-wrapper{
+  width: 100%;
+}
 .header{
   display: flex;
   margin: 10px;
@@ -6,9 +9,11 @@
   &__logo{
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+
 
     & img{
-      max-width: 40%;
+      width: 50%;
     }
   }
 
@@ -17,6 +22,7 @@
     width: 30px;
     position:relative;
     transition: all 0.1s linear;
+    margin-right:20px;
 
 
     & span{
@@ -52,31 +58,16 @@
   }
 }
 
-/* ------------------------------------
-  タブレット（768px以上）ブレークポイント　
-// ------------------------------------ */
-// @media only screen and (min-width: $break-point-sm) {
-//   .header{
-//     margin:15px;
-
-//     &__logo{
-//       text-align: center;
-
-//       & img{
-//         max-width: 60%;
-//       }
-//     }
-//   }
-// }
-/* ------------------------------------
-  /タブレット（768px以上）ブレークポイント　
------------------------------------- */
 
 /* ------------------------------------
-  PC（990px以上）ブレークポイント　
+  PC（768px以上）ブレークポイント
 ------------------------------------ */
 /* MediaQuery */
 @media only screen and (min-width: $break-point-pc) {
+  .width-wrapper{
+      max-width: $site-width;
+      margin: 0 auto;
+    }
   .header{
       justify-content: space-between;
 
@@ -87,14 +78,18 @@
       display: block;
       align-self: center;
       justify-content: right;
+      font-size: 14px;
 
 
       & ul{
         display: flex;
-        padding:50px;
 
         & li{
           padding: 0 15px;
+
+          &:last-child{
+            padding-right: 0;
+          }
         }
       }
     }

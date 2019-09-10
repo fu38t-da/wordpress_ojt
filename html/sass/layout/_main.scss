@@ -1,71 +1,105 @@
+
+// .main-img{
+//   box-sizing: border-box;
+
+//   &__bg{
+//     width: 100%;
+//     height: 35vh;
+
+//     &--logo{
+//     display: none;
+//     }
+
+//   &__text{
+
+//     &--sp img{
+
+//       max-width: 60%;
+//       position: absolute;
+//       top:15px;
+//       left:15px;
+//     }
+//     &--pc{
+//       display:none;
+//     }
+//   }
+// }
+// }
+// .main-text{
+//   font-size: 16px;
+//   text-align: center;
+//   line-height: 1.7;
+//   margin: 10px;
+// }
 .main-img{
   box-sizing: border-box;
 
   &__bg{
+      position: relative;
 
-    background: url('../../img/visual_1_sp.png') ;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 35vh;
-    position: relative;
+      &img {
+        max-width:750px;
+        width: 100%;
+        height: auto;
+    }
 
-    &--pc{
-    display: none;
+      &--logo{
+      display: none;
     }
   }
-
   &__text{
 
-    &--sp img{
-
-      max-width: 60%;
+    &--sp{
       position: absolute;
-      top:15px;
-      left:15px;
+      left: 35px;
+      top: 35px;
+
     }
     &--pc{
       display:none;
     }
+
   }
-}
-.main-text{
-  font-size: 16px;
-  text-align: center;
-  line-height: 1.7;
-  margin: 10px;
+
+
+
+
+
+
+
+
 }
 
 /* MediaQuery */
 @media only screen and (min-width: $break-point-pc) {
   .main-img{
-  box-sizing: border-box;
-  max-width:1152px;
-  height: 448px;
-  padding: 0 70px;
-  margin: 0 auto;
+    box-sizing: border-box;
+    max-width:1024px;
+    height: 448px;
+    // padding: 0 70px;
+    margin: 0 auto;
 
-  &__bg{
-    background: url('../../img/visual_1_pc.png') ;
-    // background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    // max-width: 1024px;
-    width: 100%;
-    position: relative;
-    height: 100%;
+    // &__bg{
+    //   background: url('../../img/visual_1_pc.png') ;
+    //   // background-size: cover;
+    //   background-repeat: no-repeat;
+    //   background-position: center;
+    //   width: 100%;
+    //   position: relative;
+    //   height: 100%;
 
-    &--pc{
-    display: block;
-    position: absolute;
-    left: -60px;
-    top: -115px;
+      &--logo{
+      display: block;
+      position: absolute;
+      left: -60px;
+      top: -115px;
+      width: 242px;
+      height: 242px;
 
-    & img{
-      width: 100%;
-    }
-  }
+      & img{
+        width: 100%;
+      }
+    // }
   }
   &__text{
 
@@ -81,10 +115,10 @@
   }
 }
 .main-text{
-  font-size: 20px;
+  font-size: 24px;
   text-align: left;
   line-height: 1.7;
-  margin-left: 65px;
+
 }
 .br-sp{
   display: none;
