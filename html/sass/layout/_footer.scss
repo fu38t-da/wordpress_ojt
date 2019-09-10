@@ -1,6 +1,16 @@
 .footer{
-  text-align: center;
-  background: $footer-bgc;
-  color: $footer-fontc;
-  padding: 30px;
+    text-align: center;
+    background: $footer-bgc;
+    color: $footer-fontc;
+    padding: 30px 0;
+    width: 100%;
+
 }
+
+/* MediaQuery */
+@media only screen and (min-width: $break-point-pc) {
+  .footer{
+  min-width: 1152px;
+  }
+}
+/* MediaQuery end */

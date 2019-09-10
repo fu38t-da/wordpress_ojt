@@ -19,12 +19,13 @@
 
     &--sp{
       position: absolute;
-      left: 35px;
-      top: 35px;
+      left: 20px;
+      top: 20px;
       max-width: 400px;
 
       & img{
-      width: 100%;
+      width: 90%;
+      padding-bottom: 100%;
       }
 
     }
@@ -59,41 +60,31 @@
         width: 100%;
       }
       &--logo{
-    display: block;
-    position: absolute;
-    left: -80px;
-    top: -90px;
-    // right: 0;
-    // bottom: 0;
-    // width: 242px;
-    // height: 242px;
-      & img{
-        width: 100%;
+        display: block;
+        position: absolute;
+        left: -62px;
+        top: -90px;
       }
     }
+    &__text--sp img{
+      display:none;
     }
-    &__text{
 
-      &--sp img{
-        display:none;
-      }
-
-      &--pc{
+    &__text--pc{
       display: block;
       position: absolute;
       right: -60px;
       bottom: -49px;
     }
   }
-}
-.main-text{
-  font-size: 24px;
-  text-align: left;
-  line-height: 1.7;
+  .main-text{
+    font-size: 24px;
+    text-align: left;
+    line-height: 1.7;
 
-}
-.br-sp{
-  display: none;
-}
+  }
+  .br-sp{
+    display: none;
+  }
 }
 /* MediaQuery end */
