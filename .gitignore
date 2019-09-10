@@ -1,6 +1,6 @@
 node_modules
-html/css/style.css
-html/maps/style.css.map
+html/css/
+html/maps/
 # こうするとsorcetreeで無視される
 wp-includes/
 wp-admin/
