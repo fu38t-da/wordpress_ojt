@@ -1,116 +1,82 @@
-
-// .main-img{
-//   box-sizing: border-box;
-
-//   &__bg{
-//     width: 100%;
-//     height: 35vh;
-
-//     &--logo{
-//     display: none;
-//     }
-
-//   &__text{
-
-//     &--sp img{
-
-//       max-width: 60%;
-//       position: absolute;
-//       top:15px;
-//       left:15px;
-//     }
-//     &--pc{
-//       display:none;
-//     }
-//   }
-// }
-// }
-// .main-text{
-//   font-size: 16px;
-//   text-align: center;
-//   line-height: 1.7;
-//   margin: 10px;
-// }
 .main-img{
+  position: relative;
   box-sizing: border-box;
 
   &__bg{
-      position: relative;
 
-      &img {
-        max-width:750px;
-        width: 100%;
-        height: auto;
-    }
 
-      &--logo{
+     & img{
+       width: 100%;
+     }
+
+    &--logo{
       display: none;
     }
   }
+
+
   &__text{
 
     &--sp{
       position: absolute;
       left: 35px;
       top: 35px;
+      max-width: 500px;
+
+
+      & img{
+      width: 100%;
+      }
 
     }
     &--pc{
       display:none;
     }
-
   }
-
-
-
-
-
-
-
-
 }
 
 /* MediaQuery */
 @media only screen and (min-width: $break-point-pc) {
+  .main{
+    width: 100%;
+  }
+  .main-container{
+    display: flex;
+    justify-content: center;
+  }
   .main-img{
-    box-sizing: border-box;
-    max-width:1024px;
-    height: 448px;
-    // padding: 0 70px;
-    margin: 0 auto;
+    position: relative;
 
-    // &__bg{
-    //   background: url('../../img/visual_1_pc.png') ;
-    //   // background-size: cover;
-    //   background-repeat: no-repeat;
-    //   background-position: center;
-    //   width: 100%;
-    //   position: relative;
-    //   height: 100%;
-
-      &--logo{
-      display: block;
-      position: absolute;
-      left: -60px;
-      top: -115px;
-      width: 242px;
-      height: 242px;
-
+    &__bg{
+        max-width: 1024px;
       & img{
         width: 100%;
       }
-    // }
-  }
-  &__text{
-
-    &--sp img{
-      display:none;
+      &--logo{
+    display: block;
+    position: absolute;
+    left: -80px;
+    top: -90px;
+    // right: 0;
+    // bottom: 0;
+    // width: 242px;
+    // height: 242px;
+      & img{
+        width: 100%;
+      }
     }
-    &--pc{
+    }
+    &__text{
+
+      &--sp img{
+        display:none;
+      }
+
+      &--pc{
       display: block;
       position: absolute;
       right: -60px;
-      bottom: -51px;
+      bottom: -49px;
     }
   }
 }

@@ -8,8 +8,8 @@
   <title>ヘッダーとフッター</title>
 </head>
 <body>
-  <header>
-    <div class="width-wrapper">
+  <div class="width-wrapper">
+    <header>
       <div class="header">
         <h1 class="header__logo">
           <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
@@ -29,31 +29,38 @@
         </div>
         <!-- /スマホのみ　ハンバーガー -->
       </div>
-    </div>
-  </header>
-  <main>
-    <div class="width-wrapper">
-      <div class="main-img">
-        <div class="main-img__bg">
-          <img src="../../img/visual_1_sp.png" alt="画像：アメリカンビレッジ">
-          <!-- pcのみ -->
-          <div class="main-img__bg--logo">
-            <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
-          </div>
-          <!-- /pcのみ -->
-          <div class="main-img__text--sp">
-            <img src="img/visual_text_sp.png" alt="テキスト:American Village">
-          </div>
-          <div class="main-img__text--pc">
-            <img src="img/visual_text_pc.png" alt="テキスト:American Village">
+    </header>
+    <main>
+      <div class="main">
+        <div class="main-container">
+          <div class="main-img">
+            <div class="main-img__bg">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/visual_1_pc.png"">
+              <img src=" img/visual_1_sp.png" alt="画像：アメリカンビレッジ">
+              </picture>
+              <!-- pcのみ -->
+              <div class="main-img__bg--logo">
+                <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
+              </div>
+              <!-- /pcのみ -->
+            </div>
+            <div class="main-img__text--sp">
+              <img src="img/visual_text_sp.png" alt="テキスト:American Village">
+            </div>
+
+            <div class="main-img__text--pc">
+              <img src="img/visual_text_pc.png" alt="テキスト:American Village">
+            </div>
           </div>
         </div>
+        <div class="main-text">
+          進化し続ける「街」<br class="br-sp">アメリカンヴィレッジマガジン
+        </div>
       </div>
-      <div class="main-text">
-        進化し続ける「街」<br class="br-sp">アメリカンヴィレッジマガジン
-      </div>
-    </div>
-  </main>
+    </main>
+  </div>
+
 
   <footer class="footer">
     <small>Copyright©︎Shinohara.ALL RIGHTS RESERVED.</small>

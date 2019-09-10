@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    max-width: 216px;
 
 
     & img{
@@ -65,7 +66,9 @@
 /* MediaQuery */
 @media only screen and (min-width: $break-point-pc) {
   .width-wrapper{
+      display: block;
       max-width: $site-width;
+      width: 100%;
       margin: 0 auto;
     }
   .header{
