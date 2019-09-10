@@ -1,0 +1,27 @@
+
+// カラー
+$footer-bgc:#000000;
+$footer-fontc: #ffffff;
+
+// サイズ
+$break-point-pc: 768px;
+$break-point-sm: 375px;
+$site-width: 1152px;
+
+
+// ハンバーガーメニュー
+
+@mixin absolute($i){
+  content: "";
+  position: absolute;
+  left: 0;
+  top: $i;
+}
+
+@mixin size-color(){
+  background-color:#ccc;
+  width: 100%;
+  height: 5px;
+  border-radius: 1px;
+  transition: all 0.1s linear;
+}

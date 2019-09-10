@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>ヘッダーとフッター</title>
+</head>
+<body>
+  <div class="width-wrapper">
+    <header>
+      <div class="header">
+        <h1 class="header__logo">
+          <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
+        </h1>
+        <!-- PCのみ -->
+        <div class="header__nav">
+          <ul>
+            <li>Menu01</li>
+            <li>Menu02</li>
+            <li>Menu03</li>
+            <li>Menu04</li>
+          </ul>
+        </div>
+        <!-- スマホのみ　ハンバーガー -->
+        <div class="header__hamburger">
+          <span></span>
+        </div>
+        <!-- /スマホのみ　ハンバーガー -->
+      </div>
+    </header>
+    <main>
+      <div class="main">
+        <div class="main-container">
+          <div class="main-img">
+            <div class="main-img__bg">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/visual_1_pc.png"">
+              <img src=" img/visual_1_sp.png" alt="画像：アメリカンビレッジ">
+              </picture>
+              <!-- pcのみ -->
+              <div class="main-img__bg--logo">
+                <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
+              </div>
+              <!-- /pcのみ -->
+            </div>
+            <div class="main-img__text--sp">
+              <img src="img/visual_text_sp.png" alt="テキスト:American Village">
+            </div>
+
+            <div class="main-img__text--pc">
+              <img src="img/visual_text_pc.png" alt="テキスト:American Village">
+            </div>
+          </div>
+        </div>
+        <div class="main-text">
+          進化し続ける「街」<br class="br-sp">アメリカンヴィレッジマガジン
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+  <footer class="footer">
+    <small>Copyright©︎Shinohara.ALL RIGHTS RESERVED.</small>
+  </footer>
+</body>
+</html>
