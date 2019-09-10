@@ -49,7 +49,7 @@ gulp.task('bs', function () {
   browserSync({
     server: {
       baseDir: './html/',
-      index: 'index2.html'
+      index: 'index1.html'
     },
     open: true,//ここをfalseにしておいたら勝手にブラウザに移動しなくなる
     browser: ["google chrome"] //windowsはchrome.exe
