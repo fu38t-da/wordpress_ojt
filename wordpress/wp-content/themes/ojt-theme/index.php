@@ -1,55 +1,24 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/style.css">
-  <title>Hello,AmericanVillage!!</title>
-</head>
-<body>
-  <div class="width-wrapper">
-    <header>
-      <div class="header">
-        <h1 class="header__logo">
-          <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
-        </h1>
-        <!-- PCのみ -->
-        <div class="header__nav">
-          <ul>
-            <li>Menu01</li>
-            <li>Menu02</li>
-            <li>Menu03</li>
-            <li>Menu04</li>
-          </ul>
-        </div>
-        <!-- スマホのみ　ハンバーガー -->
-        <div class="header__hamburger">
-          <span></span>
-        </div>
-        <!-- /スマホのみ　ハンバーガー -->
-      </div>
-    </header>
+<?php  get_header();?>
     <main>
       <div class="main">
         <div class="main-container">
           <div class="main-img">
             <div class="main-img__bg">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/visual_1_pc.png"">
-              <img src=" img/visual_1_sp.png" alt="画像：アメリカンビレッジ">
+                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png"">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_sp.png" alt="画像：アメリカンビレッジ">
               </picture>
               <!-- pcのみ -->
               <div class="main-img__bg--logo">
-                <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="ロゴ:アメリカンビレッジ">
               </div>
               <!-- /pcのみ -->
             </div>
             <div class="main-img__text--sp">
-              <img src="img/visual_text_sp.png" alt="テキスト:American Village">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_sp.png" alt="テキスト:American Village">
             </div>
             <div class="main-img__text--pc">
-              <img src="img/visual_text_pc.png" alt="テキスト:American Village">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_pc.png" alt="テキスト:American Village">
             </div>
           </div>
         </div>
@@ -63,7 +32,7 @@
 
           <div class="card-container">
             <div class="blog-images">
-              <img src="img/post_img_1.png" alt="" class="blog-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_1.png" alt="" class="blog-img">
             </div>
             <div class="blog-contents">
               <p class="date">2018 / 5 / 20</p>
@@ -77,7 +46,7 @@
 
           <div class="card-container">
             <div class="blog-images">
-              <img src="img/post_img_2.png" alt="" class="blog-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_2.png" alt="" class="blog-img">
             </div>
             <div class="blog-contents">
               <p class="date">2018 / 5 / 19</p>
@@ -90,7 +59,7 @@
           </div>
           <div class="card-container">
             <div class="blog-images">
-              <img src="img/post_img_3.png" alt="" class="blog-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_3.png" alt="" class="blog-img">
             </div>
             <div class="blog-contents">
               <p class="date">2018 / 5 / 18</p>
@@ -103,7 +72,7 @@
           </div>
           <div class="card-container">
             <div class="blog-images">
-              <img src="img/post_img_4.png" alt="" class="blog-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_4.png" alt="" class="blog-img">
             </div>
             <div class="blog-contents">
               <p class="date">2018 / 5 / 27</p>
@@ -116,7 +85,7 @@
           </div>
           <div class="card-container">
             <div class="blog-images">
-              <img src="img/post_img_5.png" alt="" class="blog-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_5.png" alt="" class="blog-img">
             </div>
             <div class="blog-contents">
               <p class="date">2018 / 5 / 16</p>
@@ -129,7 +98,7 @@
           </div>
           <div class="card-container">
             <div class="blog-images">
-              <img src="img/post_img_6.png" alt="" class="blog-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_6.png" alt="" class="blog-img">
             </div>
             <div class="blog-contents">
               <p class="date">2018 / 5 / 15</p>
@@ -144,8 +113,4 @@
       </section>
     </main>
   </div>
-  <footer class="footer">
-    <small>Copyright©︎Shinohara.ALL RIGHTS RESERVED.</small>
-  </footer>
-</body>
-</html>
+<?php  get_footer();?>
