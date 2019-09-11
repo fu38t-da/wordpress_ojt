@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
   <title>Hello,AmericanVillage!!</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <header>
       <div class="header">
         <h1 class="header__logo">
-          <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="ロゴ:アメリカンビレッジ">
         </h1>
         <!-- PCのみ -->
         <div class="header__nav">
