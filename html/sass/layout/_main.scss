@@ -4,37 +4,23 @@
       margin: 0 auto;
     }
 .main-img{
-  position: relative;
+  // position: relative;
   box-sizing: border-box;
-  margin-left: 3%;
-  margin-right: 3%;
-  padding: 3%;
 
-
-  &__bg{
-
-
-     & img{
+  &__bg img{
        width: 100%;
+
      }
-
-    // &--logo{
-    //   display: none;
-    // }
-  }
-
-
   &__text{
 
     &--sp{
       position: absolute;
       left: 20px;
       top: 20px;
-      max-width: 400px;
+      width: 80%;
 
       & img{
-      width: 90%;
-      padding-bottom: 100%;
+      width: 100%;
       }
 
     }
@@ -62,13 +48,13 @@
   .main{
     width: 100%;
   }
-  .main-container{
-    display: flex;
-    justify-content: center;
-  }
   .main-img{
     position: relative;
     max-width: $site-width;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 3%;
+    padding-bottom:3%;
 
     &__bg{
         max-width: 1024px;
@@ -84,11 +70,12 @@
     &__text--pc{
       display: block;
       position: absolute;
-      right: -25px;
-      bottom: -15px;
+      right: -63px;
+      bottom: -17px;
+      width: 50%;
 
       & img{
-        max-width: 85%;
+        width: 100%;
       }
     }
   }

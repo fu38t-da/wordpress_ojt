@@ -91,6 +91,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
   }
 
   .card-container {
