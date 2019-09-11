@@ -52,14 +52,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         '=qHH9w7amjqTZ.S1 ;3|QVd`m`<xtuq- ?1LKL<GvFO/ov-/O$ru%ub,#JqxaVPQ' );
-define( 'SECURE_AUTH_KEY',  'qi;xxN_t4j>!XK,P*2SF[&p8L]_S)pF_C-Kl1u;NEZ*h2Wr&`QqP#Ul|!#b2[hyU' );
-define( 'LOGGED_IN_KEY',    '@K3sZ<z*/wNhiEyc$Mu7A$t>}i7@lbwboPK;x:To+x(>tdPLE``P)hiQ!*vPb{L}' );
-define( 'NONCE_KEY',        ';!`s,oiNGES;!V$&u?}udmQv+99JG}.s1M=Hu8E_v2JLWuAZ^K`pw|U^LTIs2@m3' );
-define( 'AUTH_SALT',        '7|e=.]/-y3Ipi0yP3V]K_k%^{GG;sfq.CS3,>wW+@?rpAj1i4+B`^}{yIQ8f}cce' );
-define( 'SECURE_AUTH_SALT', 'lZ,2b7<WOx`kY(JSA8oxxbM52)k0(>@:12qd^D]/p`gxpa5er]&2@07+2VU>!4n9' );
-define( 'LOGGED_IN_SALT',   '-o:o[+I8DI1zU=/G;7m?!VfA[h%O542D0r$J|T.9eX%+(J.r(rA7YBvmD}t>P*%}' );
-define( 'NONCE_SALT',       '0%B+QZD[SMgqeBC)B|UN&$(qf8(6Z[C2gEiSDS}O38G6}V|8Ii!_NvBXd02gw*-o' );
+define( 'AUTH_KEY',         '}@;{owC-y/{=CyPfhe!Khom,:DQYxM)t9ZQhh_Z~mz85]=,_ETIr;GCoT#]|u%^&' );
+define( 'SECURE_AUTH_KEY',  'JFTt4[rm6{ZZEnP]C&mAidGBf h//CC6,F#cBcNJl%]C1%](v}d>p4^O|8`p(fq>' );
+define( 'LOGGED_IN_KEY',    'QE~M%f]/h=XXiTS,nv]nvk-Zh{CbG-EG<[-xh|eg$,<H,LYn^cO^U_1l*qB.O8Zb' );
+define( 'NONCE_KEY',        'Wackd:0(Psub4;+m,~A`]v|u4XsgzsV`ZsKQC/O%L#oCb[U?B*q,sWydbcsD1ZD,' );
+define( 'AUTH_SALT',        'T-@~K#q~e.51manfiJM`,cqE6eU^hr@J|}Rz0;vUDNFT[AN<N.HF)u}n[=Y{C0UC' );
+define( 'SECURE_AUTH_SALT', '|Y%hb:T<=.<tw7::)6XNsvW*SHpyU&}@1W~]FhG}{f$KQ(K)n>qi!><cCN]%rd(;' );
+define( 'LOGGED_IN_SALT',   '1Km$eA}7G=^~D.mEB|hAy)`F.H`J[wvyu++pfZj<0`#fStmbcby,P<&[-0@*!0zP' );
+define( 'NONCE_SALT',       'J]kg.5 d9tJeqEXoAFdSJF&M._|:=Y`Rqc^z#pVKRKpC)nTp^Vdllkv%>iWb&+tT' );
 
 /**#@-*/
 
@@ -82,9 +82,6 @@ $table_prefix = 'wp_';
  * @link http://wpdocs.osdn.jp/WordPress%E3%81%A7%E3%81%AE%E3%83%87%E3%83%90%E3%83%83%E3%82%B0
  */
 define('WP_DEBUG', false);
-define('DISALLOW_FILE_EDIT', true);
-
-
 
 /* 編集が必要なのはここまでです ! WordPress でのパブリッシングをお楽しみください。 */
 

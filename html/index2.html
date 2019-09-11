@@ -8,141 +8,137 @@
   <title>Hello,AmericanVillage!!</title>
 </head>
 <body>
-  <div class="width-wrapper">
-    <header>
-      <div class="header">
-        <h1 class="header__logo">
-          <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
-        </h1>
-        <!-- PCのみ -->
-        <div class="header__nav">
-          <ul>
-            <li>Menu01</li>
-            <li>Menu02</li>
-            <li>Menu03</li>
-            <li>Menu04</li>
-          </ul>
-        </div>
-        <!-- スマホのみ　ハンバーガー -->
-        <div class="header__hamburger">
-          <span></span>
-        </div>
-        <!-- /スマホのみ　ハンバーガー -->
+  <header class="header">
+    <div class="header-width-wrapper">
+      <div class="header__logo">
+        <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
       </div>
-    </header>
-    <main>
+      <!-- PCのみ -->
+      <div class="header__nav">
+        <ul>
+          <li>Menu01</li>
+          <li>Menu02</li>
+          <li>Menu03</li>
+          <li>Menu04</li>
+        </ul>
+      </div>
+      <!-- スマホのみ　ハンバーガー -->
+      <div class="header__hamburger">
+        <span></span>
+      </div>
+      <!-- /スマホのみ　ハンバーガー -->
+    </div>
+  </header>
+  <main>
+    <div class="width-wrapper">
       <div class="main">
-        <div class="main-container">
-          <div class="main-img">
-            <div class="main-img__bg">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/visual_1_pc.png"">
+        <div class="main-img">
+          <div class="main-img__bg">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/visual_1_pc.png">
               <img src=" img/visual_1_sp.png" alt="画像：アメリカンビレッジ">
-              </picture>
-              <!-- pcのみ -->
-              <div class="main-img__bg--logo">
-                <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
-              </div>
-              <!-- /pcのみ -->
-            </div>
-            <div class="main-img__text--sp">
-              <img src="img/visual_text_sp.png" alt="テキスト:American Village">
-            </div>
-            <div class="main-img__text--pc">
-              <img src="img/visual_text_pc.png" alt="テキスト:American Village">
-            </div>
+            </picture>
           </div>
-        </div>
-        <div class="main-text">
-          進化し続ける「街」<br class="br-sp">アメリカンヴィレッジマガジン
+          <div class="main-img__text--sp">
+            <!-- <picture>
+              <source media="(min-width: 768px)" srcset="img/visual_text_pc.png">
+              <img src=" img/visual_text_sp.png" alt="テキスト:American Village">
+            </picture> -->
+            <img src="img/visual_text_sp.png" alt="テキスト:American Village">
+          </div>
+          <div class="main-img__text--pc">
+            <img src="img/visual_text_pc.png" alt="テキスト:American Village">
+          </div>
         </div>
       </div>
-      <section>
-        <h2 class="subtitle">Latest Articles</h2>
-        <div class="flex-wrapper">
-
-          <div class="card-container">
-            <div class="blog-images">
-              <img src="img/post_img_1.png" alt="" class="blog-img">
-            </div>
-            <div class="blog-contents">
-              <p class="date">2018 / 5 / 20</p>
-              <h3 class="blog-title">おしゃれカフェがありますよ</h3>
-              <p class="text"></p>
-              <div class="blog-btn">
-                <a href="#">READ MORE</a>
-              </div>
-            </div>
+      <div class="main-text">
+        進化し続ける「街」<br class="br-sp">アメリカンヴィレッジマガジン
+      </div>
+    </div>
+    <section>
+      <h2 class="subtitle">Latest Articles</h2>
+      <div class="flex-wrapper">
+        <div class="card-container">
+          <div class="blog-images">
+            <img src="img/post_img_1.png" alt="" class="blog-img">
           </div>
-
-          <div class="card-container">
-            <div class="blog-images">
-              <img src="img/post_img_2.png" alt="" class="blog-img">
-            </div>
-            <div class="blog-contents">
-              <p class="date">2018 / 5 / 19</p>
-              <h3 class="blog-title">あのネオンはいつ交換すのか！？観覧車の謎に迫る！</h3>
-              <p class="text"></p>
-              <div class="blog-btn">
-                <a href="#">READ MORE</a>
-              </div>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="blog-images">
-              <img src="img/post_img_3.png" alt="" class="blog-img">
-            </div>
-            <div class="blog-contents">
-              <p class="date">2018 / 5 / 18</p>
-              <h3 class="blog-title">ラソナの社内はこんなのよ</h3>
-              <p class="text"></p>
-              <div class="blog-btn">
-                <a href="#">READ MORE</a>
-              </div>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="blog-images">
-              <img src="img/post_img_4.png" alt="" class="blog-img">
-            </div>
-            <div class="blog-contents">
-              <p class="date">2018 / 5 / 27</p>
-              <h3 class="blog-title">お隣のアラハはアロハ？</h3>
-              <p class="text"></p>
-              <div class="blog-btn">
-                <a href="#">READ MORE</a>
-              </div>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="blog-images">
-              <img src="img/post_img_5.png" alt="" class="blog-img">
-            </div>
-            <div class="blog-contents">
-              <p class="date">2018 / 5 / 16</p>
-              <h3 class="blog-title">なぜテント？ラソナの人に聞いてみた</h3>
-              <p class="text"></p>
-              <div class="blog-btn">
-                <a href="#">READ MORE</a>
-              </div>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="blog-images">
-              <img src="img/post_img_6.png" alt="" class="blog-img">
-            </div>
-            <div class="blog-contents">
-              <p class="date">2018 / 5 / 15</p>
-              <h3 class="blog-title">ベイエリアおしゃれすぎる問題</h3>
-              <p class="text"></p>
-              <div class="blog-btn">
-                <a href="#">READ MORE</a>
-              </div>
+          <div class="blog-contents">
+            <p class="date">2018 / 5 / 20</p>
+            <h3 class="blog-title">おしゃれカフェがありますよ</h3>
+            <p class="text"></p>
+            <div class="blog-btn">
+              <a href="#">READ MORE</a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="card-container">
+          <div class="blog-images">
+            <img src="img/post_img_2.png" alt="" class="blog-img">
+          </div>
+          <div class="blog-contents">
+            <p class="date">2018 / 5 / 19</p>
+            <h3 class="blog-title">あのネオンはいつ交換すのか！？観覧車の謎に迫る！</h3>
+            <p class="text"></p>
+            <div class="blog-btn">
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="blog-images">
+            <img src="img/post_img_3.png" alt="" class="blog-img">
+          </div>
+          <div class="blog-contents">
+            <p class="date">2018 / 5 / 18</p>
+            <h3 class="blog-title">ラソナの社内はこんなのよ</h3>
+            <p class="text"></p>
+            <div class="blog-btn">
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="blog-images">
+            <img src="img/post_img_4.png" alt="" class="blog-img">
+          </div>
+          <div class="blog-contents">
+            <p class="date">2018 / 5 / 27</p>
+            <h3 class="blog-title">お隣のアラハはアロハ？</h3>
+            <p class="text"></p>
+            <div class="blog-btn">
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="blog-images">
+            <img src="img/post_img_5.png" alt="" class="blog-img">
+          </div>
+          <div class="blog-contents">
+            <p class="date">2018 / 5 / 16</p>
+            <h3 class="blog-title">なぜテント？ラソナの人に聞いてみた</h3>
+            <p class="text"></p>
+            <div class="blog-btn">
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="blog-images">
+            <img src="img/post_img_6.png" alt="" class="blog-img">
+          </div>
+          <div class="blog-contents">
+            <p class="date">2018 / 5 / 15</p>
+            <h3 class="blog-title">ベイエリアおしゃれすぎる問題</h3>
+            <p class="text"></p>
+            <div class="blog-btn">
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   </div>
   <footer class="footer">
     <small>Copyright©︎Shinohara.ALL RIGHTS RESERVED.</small>

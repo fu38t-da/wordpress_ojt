@@ -1,31 +1,29 @@
+.width-wrapper{
+      display: block;
+      max-width: $site-width;
+      margin: 0 auto;
+    }
 .main-img{
   position: relative;
   box-sizing: border-box;
+   padding-top: 3%;
+    padding-bottom:3%;
 
-  &__bg{
-
-
-     & img{
+  &__bg img{
        width: 100%;
+
      }
-
-    &--logo{
-      display: none;
-    }
-  }
-
-
   &__text{
 
     &--sp{
       position: absolute;
-      left: 20px;
-      top: 20px;
-      max-width: 400px;
+      left: 8px;
+      top: 50px;
+      width: 50%;
+
 
       & img{
-      width: 90%;
-      padding-bottom: 100%;
+      width: 100%;
       }
 
     }
@@ -44,30 +42,32 @@
 
 /* MediaQuery */
 @media only screen and (min-width: $break-point-pc) {
+  .width-wrapper{
+      display: block;
+      max-width: $site-width;
+      width: 100%;
+      margin: 0 auto;
+    }
   .main{
     width: 100%;
   }
-  .main-container{
-    display: flex;
-    justify-content: center;
-  }
   .main-img{
     position: relative;
+    max-width: $site-width;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 3%;
+    padding-bottom:3%;
 
     &__bg{
         max-width: 1024px;
+
       & img{
         width: 100%;
       // 以下寺田追加
         // height: auto;
         // display: block;
         position: absolute;
-      }
-      &--logo{
-        display: block;
-        position: absolute;
-        left: -62px;
-        top: -90px;
       }
     }
     &__text--sp img{
@@ -77,8 +77,13 @@
     &__text--pc{
       display: block;
       position: absolute;
-      right: -60px;
-      bottom: -49px;
+      right: -52px;
+      bottom: -15px;
+      width: 50%;
+
+      & img{
+        width: 100%;
+      }
     }
   }
   .main-text{

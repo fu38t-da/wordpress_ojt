@@ -29,86 +29,44 @@
       <section>
         <h2 class="subtitle">Latest Articles</h2>
         <div class="flex-wrapper">
-
+          <?php $args = [
+        'orderby' => 'date', //並べ替えの方法
+        // 'cat'=>'category', //カテゴリーを出力
+        'order' => 'DESC', //降順(昇順 ASC)
+        'post_status' => 'publish', //記事の公開ステータス
+        'post_type' => 'post', //記事のタイプ
+        'posts_per_page' => 6, //出力する数。全出力したい場合は-1
+      ];?>
+        <?php //クエリをセット
+              $the_query = new WP_Query($args);?>
+            <?php if ($the_query->have_posts()):?>
+            <?php while ($the_query->have_posts()):
+          $the_query->the_post();?>
           <div class="card-container">
             <div class="blog-images">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_1.png" alt="" class="blog-img">
+              <?php if (has_post_thumbnail()): ?>
+              <?php the_post_thumbnail('thumbnail', ['class'=>'blog-img']); ?>
+            <?php else: ?>
+              <img src="https://placehold.jp/630x400.png" alt="画像がありません" height="400" width="630" class="blog-img">
+              </div>
+            <?php endif; ?>
             </div>
             <div class="blog-contents">
-              <p class="date">2018 / 5 / 20</p>
-              <h3 class="blog-title">おしゃれカフェがありますよ</h3>
-              <p class="text"></p>
+              <p class="date"><time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y/m/d'); ?></time></p>
+              <h3 class="blog-title"><?php the_title()?></h3>
+              <p class="text"><?php the_excerpt(); ?></p>
               <div class="blog-btn">
                 <a href="#">READ MORE</a>
               </div>
             </div>
           </div>
-
-          <div class="card-container">
-            <div class="blog-images">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_2.png" alt="" class="blog-img">
-            </div>
-            <div class="blog-contents">
-              <p class="date">2018 / 5 / 19</p>
-              <h3 class="blog-title">あのネオンはいつ交換すのか！？観覧車の謎に迫る！</h3>
-              <p class="text"></p>
-              <div class="blog-btn">
-                <a href="#">READ MORE</a>
-              </div>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="blog-images">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_3.png" alt="" class="blog-img">
-            </div>
-            <div class="blog-contents">
-              <p class="date">2018 / 5 / 18</p>
-              <h3 class="blog-title">ラソナの社内はこんなのよ</h3>
-              <p class="text"></p>
-              <div class="blog-btn">
-                <a href="#">READ MORE</a>
-              </div>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="blog-images">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_4.png" alt="" class="blog-img">
-            </div>
-            <div class="blog-contents">
-              <p class="date">2018 / 5 / 27</p>
-              <h3 class="blog-title">お隣のアラハはアロハ？</h3>
-              <p class="text"></p>
-              <div class="blog-btn">
-                <a href="#">READ MORE</a>
-              </div>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="blog-images">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_5.png" alt="" class="blog-img">
-            </div>
-            <div class="blog-contents">
-              <p class="date">2018 / 5 / 16</p>
-              <h3 class="blog-title">なぜテント？ラソナの人に聞いてみた</h3>
-              <p class="text"></p>
-              <div class="blog-btn">
-                <a href="#">READ MORE</a>
-              </div>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="blog-images">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_6.png" alt="" class="blog-img">
-            </div>
-            <div class="blog-contents">
-              <p class="date">2018 / 5 / 15</p>
-              <h3 class="blog-title">ベイエリアおしゃれすぎる問題</h3>
-              <p class="text"></p>
-              <div class="blog-btn">
-                <a href="#">READ MORE</a>
-              </div>
-            </div>
-          </div>
+          <?php endwhile;?>
+        <?php else:?>
+          <p>まだ記事はありません。</p>
+        <?php
+        endif;
+        wp_reset_postdata();//ループをリセット
+        ?>
         </div>
       </section>
     </main>

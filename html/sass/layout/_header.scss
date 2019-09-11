@@ -1,24 +1,24 @@
-.width-wrapper{
+.header-width-wrapper{
   width: 100%;
 }
 .header{
-  display: flex;
-  margin: 30px;
-  justify-content: center;
+  margin: 30px 0;
 
   &__logo{
-    display: flex;
-    justify-content: center;
     margin: 0 auto;
-    max-width: 216px;
+    width: 45%;
+
+    & img{
+      width: 100%;
+    }
   }
 
   &__hamburger{
-    align-self: center;
+    // align-self: center;
     width: 30px;
     position:relative;
     transition: all 0.1s linear;
-    margin-right:20px;
+    margin-left: auto;
 
 
     & span{
@@ -60,26 +60,32 @@
 ------------------------------------ */
 /* MediaQuery */
 @media only screen and (min-width: $break-point-pc) {
-  .width-wrapper{
+  .header-width-wrapper{
       display: block;
-      width: $site-width;
+      max-width: $site-width;
+      width: 100%;
       margin: 0 auto;
+      position: relative;
     }
   .header{
-      justify-content: space-between;
+      margin-top: 60px;
 
     &__logo{
-      visibility:hidden;
+      position: absolute;
+      left: 0;
+      bottom: -181px;
+      z-index: 2;
+      width: 20%;
+
       & img{
-        width: 50%;
+        width: 100%;
       }
     }
     &__nav{
       display: block;
-      align-self: center;
-      justify-content: right;
       font-size: 14px;
-
+      width: 304px;
+      margin-left: auto;
 
       & ul{
         display: flex;
