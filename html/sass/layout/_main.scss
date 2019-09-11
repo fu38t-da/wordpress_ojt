@@ -51,6 +51,10 @@
         max-width: 1024px;
       & img{
         width: 100%;
+      // 以下寺田追加
+        // height: auto;
+        // display: block;
+        position: absolute;
       }
       &--logo{
     display: block;
