@@ -4,8 +4,10 @@
       margin: 0 auto;
     }
 .main-img{
-  // position: relative;
+  position: relative;
   box-sizing: border-box;
+   padding-top: 3%;
+    padding-bottom:3%;
 
   &__bg img{
        width: 100%;
@@ -15,9 +17,10 @@
 
     &--sp{
       position: absolute;
-      left: 20px;
-      top: 20px;
-      width: 80%;
+      left: 8px;
+      top: 50px;
+      width: 50%;
+
 
       & img{
       width: 100%;
@@ -70,8 +73,8 @@
     &__text--pc{
       display: block;
       position: absolute;
-      right: -63px;
-      bottom: -17px;
+      right: -52px;
+      bottom: -15px;
       width: 50%;
 
       & img{
