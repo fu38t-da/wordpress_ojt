@@ -1,4 +1,4 @@
-.width-wrapper{
+.header-width-wrapper{
   width: 100%;
 }
 .header{
@@ -60,26 +60,26 @@
 ------------------------------------ */
 /* MediaQuery */
 @media only screen and (min-width: $break-point-pc) {
-  .width-wrapper{
+  .header-width-wrapper{
       display: block;
-      width: $site-width;
+      max-width: $site-width;
+      width: 100%;
       margin: 0 auto;
+      position: relative;
     }
   .header{
-      justify-content: space-between;
-
+      margin-top: 60px;
     &__logo{
-      visibility:hidden;
-      & img{
-        width: 50%;
-      }
+      position: absolute;
+      left: 0;
+      bottom: -181px;
+      z-index: 2;
     }
     &__nav{
       display: block;
-      align-self: center;
-      justify-content: right;
       font-size: 14px;
-
+      width: 304px;
+      margin-left: auto;
 
       & ul{
         display: flex;

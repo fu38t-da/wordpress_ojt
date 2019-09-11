@@ -1,6 +1,15 @@
+.width-wrapper{
+      display: block;
+      max-width: $site-width;
+      margin: 0 auto;
+    }
 .main-img{
   position: relative;
   box-sizing: border-box;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 3%;
+
 
   &__bg{
 
@@ -9,9 +18,9 @@
        width: 100%;
      }
 
-    &--logo{
-      display: none;
-    }
+    // &--logo{
+    //   display: none;
+    // }
   }
 
 
@@ -44,6 +53,12 @@
 
 /* MediaQuery */
 @media only screen and (min-width: $break-point-pc) {
+  .width-wrapper{
+      display: block;
+      max-width: $site-width;
+      width: 100%;
+      margin: 0 auto;
+    }
   .main{
     width: 100%;
   }
@@ -53,17 +68,13 @@
   }
   .main-img{
     position: relative;
+    max-width: $site-width;
 
     &__bg{
         max-width: 1024px;
+
       & img{
         width: 100%;
-      }
-      &--logo{
-        display: block;
-        position: absolute;
-        left: -62px;
-        top: -90px;
       }
     }
     &__text--sp img{
@@ -73,8 +84,12 @@
     &__text--pc{
       display: block;
       position: absolute;
-      right: -60px;
-      bottom: -49px;
+      right: -25px;
+      bottom: -15px;
+
+      & img{
+        max-width: 85%;
+      }
     }
   }
   .main-text{

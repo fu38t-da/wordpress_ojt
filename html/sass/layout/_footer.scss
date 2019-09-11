@@ -10,7 +10,7 @@
 /* MediaQuery */
 @media only screen and (min-width: $break-point-pc) {
   .footer{
-  min-width: 1152px;
+  max-width: $site-width;
   width:100%;
   }
 }
