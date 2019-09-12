@@ -24,7 +24,14 @@ jQuery(function () {
     $('#loader-bg').delay(3000).fadeOut(900); //または、$('#loader-bg').fadeOut(800);でも可
     $('#loader').delay(3000).fadeOut(500, function () { }); //または、$('#loader').fadeOut(300);でも可
     $('.header').css('display', 'block'); // ページ読み込みが終わったらメインコンテンツを表示する
-
   });
 
+  $('script').slick({
+    slidesToShow: 1,
+    fade: true,
+    speed: 3000,
+    pauseOnHover: true,
+    swipe: true,
+    infinite: true,
+  });
 });
