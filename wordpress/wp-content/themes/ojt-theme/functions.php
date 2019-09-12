@@ -41,7 +41,6 @@ function count_user_posttype($userid,$posttype) {
 // スライダー
 
 define('SLIDESHOW_SECTION', 'slideshow_section');
-
 define('SLIDESHOW_IMAGE_URL01', 'image_url01');
 define('SLIDESHOW_IMAGE_URL01_SP', 'image_url01_sp');
 define('SLIDESHOW_IMAGE_URL02', 'image_url02');
@@ -111,15 +110,14 @@ function my_theme_customizer( $wp_customize ) {
         'settings' =>  SLIDESHOW_IMAGE_URL03_SP , //セッティングID
         'description' => 'スマホ用スライドショー画像をセットします',
     ) ) );
-
 }
 
 add_action( 'customize_register', 'my_theme_customizer' );//カスタマイザーに登録
 
 function get_slider_img($img){
   $src = '<picture>';
-  $src .= '<source media="(min-width: 768px)" srcset='.esc_url( get_theme_mod( $img.'_sp' ) ).'>';
-  $src .= '<img src='.esc_url( get_theme_mod( $img ) ).'>';
+  $src .= '<source media="(min-width: 768px)" srcset='.esc_url( get_theme_mod( $img ) ).'>';
+  $src .= '<img src='.esc_url( get_theme_mod( $img.'_sp' ) ).'>';
   $src .= '</picture>';
 
   return $src;

@@ -4,11 +4,13 @@
       <div class="main">
         <div class="main-img">
           <div class="main-img__bg">
-            <?php if ( is_mobile() ) : ?>
+            <?php echo get_slider_img($img); ?>
+
+            <!-- <?php if ( is_mobile() ) : ?>
             <?php echo do_shortcode('[smartslider3 slider=3]');?>
             <?php else: ?>
             <?php echo do_shortcode('[smartslider3 slider=2]');?>
-            <?php endif; ?>
+            <?php endif; ?> -->
           </div>
           <div class="main-img__text--sp">
             <img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_sp.png" alt="テキスト:American Village">
