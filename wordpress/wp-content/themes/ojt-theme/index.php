@@ -19,7 +19,9 @@
         </div>
       </div>
       <h1 class="main-text">
-        進化し続ける「街」<br class="br-sp">アメリカンヴィレッジマガジン
+        進化し続ける「街」
+        <br class="br-sp">
+        アメリカンビレッジマガジン
       </h1>
       <section>
         <h2 class="subtitle">Latest Articles</h2>
