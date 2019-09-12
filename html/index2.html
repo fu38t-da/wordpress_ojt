@@ -8,49 +8,48 @@
   <title>Hello,AmericanVillage!!</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header-width-wrapper">
-      <div class="header__logo">
-        <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
+  <header>
+    <div class="header">
+      <div class="header-width-wrapper">
+        <div class="header__logo">
+          <img src="img/logo.png" alt="ロゴ:アメリカンビレッジ">
+        </div>
+        <!-- PCのみ -->
+        <div class="header__nav">
+          <ul>
+            <li>Menu01</li>
+            <li>Menu02</li>
+            <li>Menu03</li>
+            <li>Menu04</li>
+          </ul>
+        </div>
+        <!-- スマホのみ　ハンバーガー -->
+        <div class="header__hamburger">
+          <span></span>
+        </div>
+        <!-- /スマホのみ　ハンバーガー -->
       </div>
-      <!-- PCのみ -->
-      <div class="header__nav">
-        <ul>
-          <li>Menu01</li>
-          <li>Menu02</li>
-          <li>Menu03</li>
-          <li>Menu04</li>
-        </ul>
-      </div>
-      <!-- スマホのみ　ハンバーガー -->
-      <div class="header__hamburger">
-        <span></span>
-      </div>
-      <!-- /スマホのみ　ハンバーガー -->
     </div>
   </header>
   <main>
-    <div class="width-wrapper">
-      <div class="main">
-        <div class="main-img">
-          <div class="main-img__bg">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/visual_1_pc.png">
-              <img src=" img/visual_1_sp.png" alt="画像：アメリカンビレッジ">
-            </picture>
-          </div>
-          <div class="main-img__text--sp">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/visual_text_pc.png">
-              <img src=" img/visual_text_sp.png" alt="テキスト:American Village">
-            </picture>
-            <!-- <img src="img/visual_text_sp.png" alt="テキスト:American Village"> -->
-          </div>
-          <div class="main-img__text--pc">
-            <img src="img/visual_text_pc.png" alt="テキスト:American Village">
-          </div>
+    <div class="main">
+      <div class="main-img">
+        <div class="main-img__bg">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/visual_1_pc.png">
+            <img src=" img/visual_1_sp.png" alt="画像：アメリカンビレッジ">
+          </picture>
         </div>
+        <div class="main-img__text--sp">
+          <img src="img/visual_text_sp.png" alt="テキスト:American Village">
+        </div>
+        <div class="main-img__text--pc">
+          <img src="img/visual_text_pc.png" alt="テキスト:American Village">
+        </div>
+
       </div>
+    </div>
+    <div class="width-wrapper">
       <div class="main-text">
         進化し続ける「街」<br class="br-sp">アメリカンヴィレッジマガジン
       </div>
