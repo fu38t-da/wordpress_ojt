@@ -1,30 +1,29 @@
 <?php  get_header();?>
-    <main>
+  <main>
+    <div class="width-wrapper">
       <div class="main">
-        <div class="main-container">
-          <div class="main-img">
-            <div class="main-img__bg">
-              <picture>
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png"">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_sp.png" alt="画像：アメリカンビレッジ">
-              </picture>
-              <!-- pcのみ -->
-              <div class="main-img__bg--logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="ロゴ:アメリカンビレッジ">
-              </div>
-              <!-- /pcのみ -->
-            </div>
-            <div class="main-img__text--sp">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_sp.png" alt="テキスト:American Village">
-            </div>
-            <div class="main-img__text--pc">
+        <div class="main-img">
+          <div class="main-img__bg">
+            <!-- <picture>
+              <source media="(min-width: 768px)" srcset="">
+              <img src="">
+            </picture> -->
+            <?php if ( is_mobile() ) : ?>
+            <?php echo do_shortcode('[smartslider3 slider=3]');?>
+            <?php else: ?>
+            <?php echo do_shortcode('[smartslider3 slider=2]');?>
+            <?php endif; ?>
+          </div>
+          <div class="main-img__text--sp">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_sp.png" alt="テキスト:American Village">
+          </div>
+          <div class="main-img__text--pc">
               <img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_pc.png" alt="テキスト:American Village">
-            </div>
           </div>
         </div>
-        <div class="main-text">
+        <h1 class="main-text">
           進化し続ける「街」<br class="br-sp">アメリカンヴィレッジマガジン
-        </div>
+        </h1>
       </div>
       <section>
         <h2 class="subtitle">Latest Articles</h2>
@@ -69,6 +68,6 @@
         ?>
         </div>
       </section>
-    </main>
-  </div>
+    </div>
+  </main>
 <?php  get_footer();?>
