@@ -1,0 +1,42 @@
+#loading{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    z-index: 3;
+}
+
+#loader-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    z-index: 3;
+}
+
+.loader-bg--container {
+  width: 100%;
+  height: 70%;
+  margin: 20% auto;
+  text-align: center;
+
+  &__load-text {
+    font-size: 5rem;
+    font-family: 'Niconne', cursive;
+  }
+}
+
+/* ------------------------------------
+  PC（768px以上）ブレークポイント
+------------------------------------ */
+/* MediaQuery */
+@media only screen and (max-width: 414px) {
+  .loader-bg--container{
+    margin-top: 40%;
+
+    &__load-text{
+     font-size: 3rem;
+    }
+  }
+}
