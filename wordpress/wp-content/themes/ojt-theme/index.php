@@ -17,10 +17,10 @@
               <img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_pc.png" alt="テキスト:American Village">
           </div>
         </div>
-        <h1 class="main-text">
-          進化し続ける「街」<br class="br-sp">アメリカンヴィレッジマガジン
-        </h1>
       </div>
+      <h1 class="main-text">
+        進化し続ける「街」<br class="br-sp">アメリカンヴィレッジマガジン
+      </h1>
       <section>
         <h2 class="subtitle">Latest Articles</h2>
         <div class="flex-wrapper">

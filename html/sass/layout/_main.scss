@@ -49,22 +49,21 @@
       margin: 0 auto;
     }
   .main{
-    width: 100%;
+    margin: 0 auto;
+    max-width: $site-width;
   }
   .main-img{
     position: relative;
-    max-width: $site-width;
+    max-width: 1024px;
     margin-left: 5%;
     margin-right: 5%;
-    padding-top: 3%;
-    padding-bottom:3%;
+    padding-top: 3.5%;
+    padding-bottom: 4%;
+    width: 90%;
 
     &__bg{
         max-width: 1024px;
-
-      & img{
         width: 100%;
-      }
     }
     &__text--sp img{
       display:none;
@@ -73,14 +72,15 @@
     &__text--pc{
       display: block;
       position: absolute;
-      right: -52px;
-      bottom: -15px;
+      right: -6%;
+      bottom: -0.8%;
       width: 50%;
 
       & img{
         width: 100%;
       }
     }
+
   }
   .main-text{
     font-size: 24px;
