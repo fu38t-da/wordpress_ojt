@@ -8,20 +8,15 @@
   <title>Hello,AmericanVillage!!</title>
 </head>
 <body>
-  <div class="width-wrapper">
-    <header>
-      <div class="header">
-        <h1 class="header__logo">
+<header>
+  <div class="header">
+    <div class="header-width-wrapper">
+      <div class="header__logo">
           <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="ロゴ:アメリカンビレッジ">
-        </h1>
+      </div>
         <!-- PCのみ -->
         <div class="header__nav">
-          <ul>
-            <li>Menu01</li>
-            <li>Menu02</li>
-            <li>Menu03</li>
-            <li>Menu04</li>
-          </ul>
+          <?php wp_nav_menu(); ?>
         </div>
         <!-- スマホのみ　ハンバーガー -->
         <div class="header__hamburger">
@@ -29,5 +24,6 @@
         </div>
         <!-- /スマホのみ　ハンバーガー -->
       </div>
-      <?php wp_head();?>
-    </header>
+    </div>
+    <?php wp_head();?>
+  </header>
