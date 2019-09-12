@@ -26,7 +26,7 @@ jQuery(function () {
     $('.header').css('display', 'block'); // ページ読み込みが終わったらメインコンテンツを表示する
   });
 
-  $('script').slick({
+  $('img').slick({
     slidesToShow: 1,
     fade: true,
     speed: 3000,
