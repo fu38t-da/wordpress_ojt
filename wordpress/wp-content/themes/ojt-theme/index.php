@@ -4,10 +4,6 @@
       <div class="main">
         <div class="main-img">
           <div class="main-img__bg">
-            <!-- <picture>
-              <source media="(min-width: 768px)" srcset="">
-              <img src="">
-            </picture> -->
             <?php if ( is_mobile() ) : ?>
             <?php echo do_shortcode('[smartslider3 slider=3]');?>
             <?php else: ?>

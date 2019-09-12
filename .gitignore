@@ -2,13 +2,13 @@ node_modules
 html/css/
 html/maps/
 # こうするとsorcetreeで無視される
-wp-includes/
-wp-admin/
-wp-content/languages/
-wp-content/plugins/
-wp-content/uploads/
-wp-content/themes/twentynineteen
-wp-content/themes/twentyseventeen
-wp-content/themes/twentysixteen
+wordpress/wp-includes/
+wordpress/wp-admin/
+wordpress/wp-content/languages/
+wordpress/wp-content/plugins/
+wordpress/wp-content/uploads/
+wordpress/wp-content/themes/twentynineteen
+wordpress/wp-content/themes/twentyseventeen
+wordpress/wp-content/themes/twentysixteen
 package-lock.json
 gulpfile.js
