@@ -7,6 +7,7 @@ jQuery(function () {
   $(function () {
     let h = $(window).height(); //ブラウザウィンドウの高さを取得
     $('.header').css('display', 'none'); //初期状態ではメインコンテンツを非表示
+
     $('#loader-bg ,#loader').height(h).css('display', 'block'); //ウィンドウの高さに合わせでローディング画面を表示
     $(function () {
       let $allMsg = $('.loader-bg--container__load-text');
@@ -14,6 +15,7 @@ jQuery(function () {
       $('.loader-bg--container__load-text').html("");
       $.each($wordList, function (idx, elem) {
         let newEL = $("<span/>").text(elem).css({ opacity: 0 });
+        $('.loader-bg--container__load-text').show();
         newEL.appendTo($allMsg);
         newEL.delay(idx * 70);
         newEL.animate({ opacity: 1 }, 3000);
