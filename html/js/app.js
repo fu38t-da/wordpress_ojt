@@ -26,7 +26,7 @@ jQuery(function () {
     $('.header').css('display', 'block'); // ページ読み込みが終わったらメインコンテンツを表示する
   });
 
-  $('img').slick({
+  $('.toggleImg').slick({
     slidesToShow: 1,
     fade: true,
     speed: 3000,
@@ -34,4 +34,26 @@ jQuery(function () {
     swipe: true,
     infinite: true,
   });
+
+  // レスポンシブ
+  // $(function () {
+  //   let width = $(window).width();
+  //   if (width < 768) {
+  //     $(".toggleImg").each(function () {
+  //       $(this).attr("src", $(this).attr("src").replace("_pc", "_sp"));
+  //     })
+  //   }
+  // });
+  // $(function () {
+  // let $slideshow =
+  // if (jQuery(window).width() < 768) {
+  // sp画像を取得？_spがついているもの
+  // ループ処理 .lengthで値を取得？
+  // 最後まで行ったら最初の画像に戻る処理
+  // } else {
+  // pc画像を取得？_pcがついているもの
+  // ループ処理 .lengthで値を取得？
+  // 最後まで行ったら最初の画像に戻る処理
+  // }
+  //   })
 });
