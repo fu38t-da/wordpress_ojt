@@ -9,35 +9,122 @@
    padding-top: 3%;
     padding-bottom:3%;
 
+
   &__bg img{
        width: 100%;
 
      }
   &__text{
+    position: absolute;
+    left: 8px;
+    top: 50px;
+    width: 50%;
+    z-index:10;
 
-    &--sp{
-      position: absolute;
-      left: 8px;
-      top: 50px;
-      width: 50%;
 
-
-      & img{
-      width: 100%;
-      }
-
-    }
-    &--pc{
-      display:none;
+    & img{
+    width: 100%;
     }
   }
 }
 .main-text{
-  font-size: 32px;
+  font-size: 16px;
   text-align: center;
   line-height: 1.7;
 
 }
+// スライショー
+.main-img__bg {
+  position: relative;
+}
+
+
+.slideshow {
+
+
+  &:nth-child(1){
+  animation: slideshow1 12s linear 6s infinite;
+  }
+
+
+  &:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slideshow2 12s linear 6s infinite;
+    z-index: -1;
+  }
+
+  &:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slideshow3 12s linear 6s infinite;
+    z-index: -1;
+  }
+}
+
+
+@keyframes slideshow1 {
+    0% {
+       opacity: 1;
+       z-index: 1;
+      }
+    33% {
+       opacity: 0;
+       z-index: -1;
+       }
+    66% {
+      opacity: 0;
+      z-index: -1;
+
+     }
+    100% {
+       opacity: 1;
+       z-index: 1;
+      }
+}
+
+@keyframes slideshow2 {
+     0% {
+       opacity: 0;
+       z-index: -1;
+      }
+    33% {
+       opacity: 1;
+       z-index: 1;
+       }
+    66% {
+      opacity: 0;
+      z-index: -1;
+
+     }
+    100% {
+       opacity: 0;
+       z-index: -1;
+      }
+}
+
+@keyframes slideshow3 {
+     0% {
+       opacity: 0;
+       z-index: -1;
+      }
+    33% {
+       opacity: 0;
+       z-index: -1;
+       }
+    66% {
+      opacity: 1;
+      z-index: 1;
+
+     }
+    100% {
+       opacity: 0;
+       z-index: -1;
+      }
+}
+// スライドショーここまで
 
 
 /* MediaQuery */
@@ -66,20 +153,14 @@
         max-width: 1024px;
         width: 100%;
     }
-    &__text--sp img{
-      display:none;
-    }
 
-    &__text--pc{
-      display: block;
+    &__text{
       position: absolute;
-      right: -6%;
-      bottom: -0.8%;
-      width: 50%;
+      left: 56%;
+      top: 50.2%;
+      z-index:10;
 
-      & img{
-        width: 100%;
-      }
+
     }
 
   }
@@ -88,7 +169,7 @@
     text-align: left;
     line-height: 1.7;
     font-weight: normal;
-    margin-top: -30px;
+    margin-top: -2.8%;
 
   }
   .br-sp{
