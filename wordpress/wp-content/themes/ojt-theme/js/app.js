@@ -2,6 +2,10 @@ jQuery(function () {
   $('.menu').on('click', function () {
     $('.menu__line').toggleClass('active');
     $('.gnav').fadeToggle();
+    $('.gnav ul').addClass('gnav__menu')
+    $('.gnav li').addClass('gnav__menu__item')
+    $('.gnav ul').removeClass('menu')
+
   });
 
   $(function () {
@@ -36,7 +40,6 @@ jQuery(function () {
     autoplay: true,
     arrow: false,
   });
-
   // let windowWidth = $(window).width();
   // let windowSm = 767;
   // let src = $('.list').children('img').attr('src')

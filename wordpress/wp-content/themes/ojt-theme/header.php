@@ -31,12 +31,14 @@
         </a>
         <nav class="gnav">
           <div class="gnav__wrap">
-            <ul class="gnav__menu">
+            <!-- <ul class="gnav__menu">
               <li class="gnav__menu__item"><a href="">Menu01</a></li>
               <li class="gnav__menu__item"><a href="">Menu02</a></li>
               <li class="gnav__menu__item"><a href="">Menu03</a></li>
               <li class="gnav__menu__item"><a href="">Menu04</a></li>
-            </ul>
+            </ul> -->
+          <?php wp_nav_menu(); ?>
+
           </div>
         </nav>
         <!-- /スマホのみ　ハンバーガー -->
