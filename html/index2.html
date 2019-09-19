@@ -8,6 +8,11 @@
   <title>Hello,AmericanVillage!!</title>
 </head>
 <body>
+  <div id="loader-bg">
+    <div class="loader-bg--container">
+      <p class="loader-bg--container__load-text">Hello,American Village</p>
+    </div>
+  </div>
   <header>
     <div class="header">
       <div class="header-width-wrapper">
@@ -24,9 +29,21 @@
           </ul>
         </div>
         <!-- スマホのみ　ハンバーガー -->
-        <div class="header__hamburger">
-          <span></span>
-        </div>
+        <a class="menu">
+          <span class="menu__line menu__line--top"></span>
+          <span class="menu__line menu__line--center"></span>
+          <span class="menu__line menu__line--bottom"></span>
+        </a>
+        <nav class="gnav">
+          <div class="gnav__wrap">
+            <ul class="gnav__menu">
+              <li class="gnav__menu__item"><a href="">Menu01</a></li>
+              <li class="gnav__menu__item"><a href="">Menu02</a></li>
+              <li class="gnav__menu__item"><a href="">Menu03</a></li>
+              <li class="gnav__menu__item"><a href="">Menu04</a></li>
+            </ul>
+          </div>
+        </nav>
         <!-- /スマホのみ　ハンバーガー -->
       </div>
     </div>
@@ -40,18 +57,15 @@
             <img src=" img/visual_1_sp.png" alt="画像：アメリカンビレッジ">
           </picture>
         </div>
-        <div class="main-img__text--sp">
+        <picture class="main-img__text">
+          <source media="(min-width: 768px)" srcset="img/visual_text_pc.png">
           <img src="img/visual_text_sp.png" alt="テキスト:American Village">
-        </div>
-        <div class="main-img__text--pc">
-          <img src="img/visual_text_pc.png" alt="テキスト:American Village">
-        </div>
-
+        </picture>
       </div>
     </div>
     <div class="width-wrapper">
       <div class="main-text">
-        進化し続ける「街」<br class="br-sp">アメリカンヴィレッジマガジン
+        進化し続ける「街」<br class="br-sp">アメリカンビレッジマガジン
       </div>
     </div>
     <section>
@@ -142,5 +156,8 @@
   <footer class="footer">
     <small>Copyright©︎Shinohara.ALL RIGHTS RESERVED.</small>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

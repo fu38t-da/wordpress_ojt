@@ -8,6 +8,11 @@
   <title>Hello,AmericanVillage!!</title>
 </head>
 <body>
+  <div id="loader-bg">
+    <div class="loader-bg--container">
+      <p class="loader-bg--container__load-text">Hello,American Village</p>
+    </div>
+  </div>
 <header>
   <div class="header">
     <div class="header-width-wrapper">
@@ -19,9 +24,23 @@
           <?php wp_nav_menu(); ?>
         </div>
         <!-- スマホのみ　ハンバーガー -->
-        <div class="header__hamburger">
-          <span></span>
-        </div>
+        <a class="menu">
+          <span class="menu__line menu__line--top"></span>
+          <span class="menu__line menu__line--center"></span>
+          <span class="menu__line menu__line--bottom"></span>
+        </a>
+        <nav class="gnav">
+          <div class="gnav__wrap">
+            <!-- <ul class="gnav__menu">
+              <li class="gnav__menu__item"><a href="">Menu01</a></li>
+              <li class="gnav__menu__item"><a href="">Menu02</a></li>
+              <li class="gnav__menu__item"><a href="">Menu03</a></li>
+              <li class="gnav__menu__item"><a href="">Menu04</a></li>
+            </ul> -->
+          <?php wp_nav_menu(); ?>
+
+          </div>
+        </nav>
         <!-- /スマホのみ　ハンバーガー -->
       </div>
     </div>
